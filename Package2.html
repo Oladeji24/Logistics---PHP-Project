@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Submission Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Submit a Package</div>
+                <div class="card-body">
+                    <form action="Package.php" method="post">
+                        <!-- Tracking Number -->
+                        <div class="form-group">
+                            <label for="tracking_number">Tracking Number:</label>
+                            <input type="text" class="form-control" id="tracking_number" name="tracking_number">
+                        </div>
+
+                        <!-- Recipient Name -->
+                        <div class="form-group">
+                            <label for="recipient_name">Recipient Name:</label>
+                            <input type="text" class="form-control" id="recipient_name" name="recipient_name">
+                        </div>
+
+                        <!-- Recipient Address -->
+                        <div class="form-group">
+                            <label for="recipient_address">Recipient Address:</label>
+                            <textarea class="form-control" id="recipient_address" name="recipient_address"></textarea>
+                        </div>
+
+                        <!-- Sender Name -->
+                        <div class="form-group">
+                            <label for="sender_name">Sender Name:</label>
+                            <input type="text" class="form-control" id="sender_name" name="sender_name">
+                        </div>
+
+                        <!-- Sender Phone -->
+                        <div class="form-group">
+                            <label for="sender_phone">Sender Phone:</label>
+                            <input type="tel" class="form-control" id="sender_phone" name="sender_phone">
+                        </div>
+
+                        <!-- Sender Address -->
+                        <div class="form-group">
+                            <label for="sender_address">Sender Address:</label>
+                            <textarea class="form-control" id="sender_address" name="sender_address"></textarea>
+                        </div>
+
+                        <!-- Ship Date -->
+                        <div class="form-group">
+                            <label for="ship_date">Ship Date:</label>
+                            <input type="date" class="form-control" id="ship_date" name="ship_date">
+                        </div>
+
+                        <!-- Estimated Delivery Date -->
+                        <div class="form-group">
+                            <label for="estimated_delivery_date">Estimated Delivery Date:</label>
+                            <input type="date" class="form-control" id="estimated_delivery_date" name="estimated_delivery_date">
+                        </div>
+
+                        <!-- Status Name -->
+                        <div class="form-group">
+                            <label for="status_name">Status:</label>
+                            <select class="form-control" id="status_name" name="status_name">
+                                <option value="In-Transit">In-Transit</option>
+                                <option value="Awaiting Pickup">Awaiting Pickup</option>
+                                <option value="Delivered">Delivered</option>
+                            </select>
+                        </div>
+
+                        <!-- Status Description -->
+                        <div class="form-group">
+                            <label for="status_desc">Status Description:</label>
+                            <textarea class="form-control" id="status_desc" name="status_desc"></textarea>
+                        </div>
+                        <!-- Location -->
+                        <div class="form-group
+                                                 <!-- Location -->
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <input type="text" class="form-control" id="location" name="location">
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Submit Package">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap's JavaScript library and optional jQuery Popper -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
